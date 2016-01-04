@@ -1,0 +1,55 @@
+plugin.tx_lobbycal_pi1 {
+
+    # cat=plugin.tx_lobbycal_pi1//a; type=string; label=API URL for your MEP
+    lc2pUrl = https://localhost/api/meetings/dt/0
+
+    # cat=plugin.tx_lobbycal_pi1//c type=string; label=Number of meetings to display on a table page
+    lc2pShowStart = 1
+
+    # cat=plugin.tx_lobbycal_pi1//d; type=boolean; label=Display column for start date?
+    lc2pShowEnd = 1
+
+    # cat=plugin.tx_lobbycal_pi1//e; type=boolean[0]; label=Display column for first name?
+    lc2pShowFirstName =
+
+    # cat=plugin.tx_lobbycal_pi1//f; type=boolean[0]; label=Display column for last name?
+    lc2pShowLastName =
+
+    # cat=plugin.tx_lobbycal_pi1//g; type=boolean; label=Display column for title?
+    lc2pShowTitle = 1
+
+    # cat=plugin.tx_lobbycal_pi1//h; type=boolean; label=Display column for partner?
+    lc2pShowPartner = 1
+
+    # cat=plugin.tx_lobbycal_pi1//i; type=boolean[0]; label=Display column for tags?
+    lc2pShowTags =
+
+    # cat=plugin.tx_lobbycal_pi1//j; type=boolean; label=Display tags with title?
+    lc2pShowTagsTitle = 1
+
+    # cat=plugin.tx_lobbycal_pi1//k; type=string; label=Entries per page
+    lc2pPerPage = 10
+
+    # cat=plugin.tx_lobbycal_pi1//l; type=string; label=Date Format
+    lc2pDateFormat = DD/MM/YYYY
+    
+ 	# cat=plugin.tx_lobbycal_pi1//m; type=string; label=Order
+    lc2pOrder = startDate desc
+
+	view {
+		# cat=plugin.tx_lobbycal_pi1/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:lobbycal/Resources/Private/Templates/
+		# cat=plugin.tx_lobbycal_pi1/file; type=string; label=Path to template partials (FE)
+		#partialRootPath = EXT:lobbycal/Resources/Private/Partials/
+		# cat=plugin.tx_lobbycal_pi1/file; type=string; label=Path to template layouts (FE)
+		#layoutRootPath = EXT:lobbycal/Resources/Private/Layouts/
+
+		# cat=plugin.tx_lobbycal_pi1/file; type=string; label=Include jQuery
+		include_jquery = 1
+
+    }
+	persistence {
+		# cat=plugin.tx_lobbycal_pi1//a; type=string; label=Default storage PID
+		#storagePid =
+	}
+}

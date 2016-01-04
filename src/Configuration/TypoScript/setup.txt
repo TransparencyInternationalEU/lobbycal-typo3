@@ -1,0 +1,42 @@
+plugin.tx_lobbycal_pi1 {
+    view {
+        templateRootPath = {$plugin.tx_lobbycal_pi1.view.templateRootPath}
+        partialRootPath = {$plugin.tx_lobbycal_pi1.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_lobbycal_pi1.view.layoutRootPath}
+    }
+
+    persistence {
+        storagePid = {$plugin.tx_lobbycal_pi1.persistence.storagePid}
+    }
+
+    settings {
+        lc2pUrl = {$plugin.tx_lobbycal_pi1.lc2pUrl}
+        lc2pShowStart = {$plugin.tx_lobbycal_pi1.lc2pShowStart}
+        lc2pShowEnd = {$plugin.tx_lobbycal_pi1.lc2pShowEnd}
+        lc2pShowFirstName = {$plugin.tx_lobbycal_pi1.lc2pShowFirstName}
+        lc2pShowTitle = {$plugin.tx_lobbycal_pi1.lc2pShowTitle}
+        lc2pShowPartner = {$plugin.tx_lobbycal_pi1.lc2pShowPartner}
+        lc2pShowTags = {$plugin.tx_lobbycal_pi1.lc2pShowTags}
+        lc2pShowTagsTitle = {$plugin.tx_lobbycal_pi1.lc2pShowTagsTitle}
+        lc2pPerPage = {$plugin.tx_lobbycal_pi1.lc2pPerPage}
+        lc2pDateFormat = {$plugin.tx_lobbycal_pi1.lc2pDateFormat}
+        lc2pOrder = {$plugin.tx_lobbycal_pi1.lc2pOrder}
+    }
+}
+
+page.includeCSS {
+    lobbycal_custom = typo3conf/ext/lobbycal/Resources/Public/css/custom.css
+    lobbycal_datatables = typo3conf/ext/lobbycal/Resources/Public/css/jquery.datatables.css
+}
+
+[globalVar = LIT:{$plugin.tx_lobbycal_pi1.view.include_jquery} > 0]
+    page.includeJS.lobbycal_jquery = typo3conf/ext/lobbycal/Resources/Public/js/jquery.js
+[END]
+
+page.includeJSFooter {
+    lobbycal_jquery_spring = typo3conf/ext/lobbycal/Resources/Public/js/jquery.spring-friendly.js
+    lobbycal_datatables = typo3conf/ext/lobbycal/Resources/Public/js/jquery.datatables.js
+    lobbycal_moment = typo3conf/ext/lobbycal/Resources/Public/js/moment.min.js
+    lobbycal_datetime_moment = typo3conf/ext/lobbycal/Resources/Public/js/datetime-moment.js
+    lobbycal_lobbycal2press = typo3conf/ext/lobbycal/Resources/Public/js/lobbycal2press.js
+}

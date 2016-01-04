@@ -1,0 +1,47 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2.0-6.2.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "version": ""
+        },
+        "extensionKey": "lobbycal",
+        "name": "LobbyCal",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "brussels@transparency.org",
+                "name": "Transparency International EU",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "pi1",
+                "name": "LobbyCal"
+            }
+        ],
+        "vendorName": "transparency.org"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2015-11-23 08:51",
+        "extension_builder_version": "6.2",
+        "be_user": " (1)"
+    }
+}
